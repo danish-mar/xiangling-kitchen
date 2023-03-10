@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Khaliya</title>
+<link href="../sticker_5.png" rel="icon" type="image/png"/>
+<style>
+    *{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .nav ul{
+        list-style: none;
+        padding: 0%;
+
+        margin: 0%;
+        background-color: burlywood;
+        overflow: hidden;
+        
+    }
+    .nav li{
+        float: left;
+    }
+    .nav li a{
+        text-decoration: none;
+        padding: 16px;
+        display: block;
+        
+    }
+    .nav li a:hover{
+        background-color: blanchedalmond;
+    }
+    .img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    footer{
+        background-color: goldenrod;
+        margin: 0%;
+        padding: 5px;
+    }
+    body{
+       background-color: antiquewhite;
+    }
+    .tiles {
+    padding: 20px;
+  width: 600px;
+  font-size: 0;
+  margin: 0 auto;
+
+}
+
+.tile {
+  width: calc(600px / 3);
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: lightsalmon;
+}
+.xiang_img{
+  content: "";
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2; /* Set the opacity of the image */
+}
+
+.tile h2, a{
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+    </style>
+</head>
+<body>
+<div class="nav">
+<ul>
+<li><a href="..//index.html">Home</a></li>
+<li><a href="../about.html">About</a></li>
+<li><a href="../contact.html">Contact</a></li>
+<li><a href="../search.html">Search</a></li>
+</ul>
+</div>
+<div class="img">
+<img alt="" src="../assets/Coffee-PNG.png" style="height: 230px;"/>
+</div>
+<div class="coffee_text">
+<h1 class="rec_name" style="text-align: center;">Khaliya</h1>
+<h2 class="rec_quote" style="text-align: center;font-size: 30px;font-weight: 300;">Served with nan and love</h2>
+</div>
+<div class="ingrediants">
+<h2>Ingredients Required</h2>
+<h3 style="text-align: left;font-size: 20px;font-weight: 300;">
+<ul class="rec_ingred"><li>maida</li><li>water</li><li>geo</li></ul>
+</h3>
+</div>
+<div class="letsmake">
+<h2>Lets Make it</h2>
+<blockquote><strong>Step 1: </strong>add maida to a bowl<br/><strong>Step 2: </strong>add water<br/><strong>Step 3: </strong>and tell a geo character to make it</blockquote>
+</div>
+<h2 class="rec_ending" style="text-align: center;font-size: 30px;font-weight: 300;">get slapped</h2>
+<div class="try_other">
+<h2>Try Other Recipes </h2>
+<div class="tiles">
+<div class="tile">
+<a href="../rec/pancake.html"><img height="150" src="../assets/pancake2.png" width="200"/></a>
+<h2><a href="..//rec/pancake.html" style="text-decoration: none;">Pancake</a></h2>
+</div>
+<div class="tile">
+<a href="../rec/tea.html"><img height="155" src="../assets/tea.png" width="200"/></a>
+<h2><a href="..//rec/tea.html">Tea</a></h2>
+</div>
+</div>
+</div>
+
+<img alt="" class="xiang_img" height="400px" src="..//assets/tray_large.png"/>
+<footer class="footer">
+    2022 Recipedia ©
+</footer>
+</body>
+</html>

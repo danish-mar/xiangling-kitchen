@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xian's Pancake</title>
+    <link rel="icon" type="image/png" href="../sticker_5.png">
+
+    <style>
+    *{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .nav ul{
+        list-style: none;
+        padding: 0%;
+
+        margin: 0%;
+        background-color: burlywood;
+        overflow: hidden;
+        
+    }
+    .nav li{
+        float: left;
+    }
+    .nav li a{
+        text-decoration: none;
+        padding: 16px;
+        display: block;
+        
+    }
+    .nav li a:hover{
+        background-color: blanchedalmond;
+    }
+    .pancake_img{
+        display: block;
+        margin: auto;
+        padding: 2px;
+        height: 400px;
+    }
+    footer{
+        background-color: goldenrod;
+        margin: 0%;
+        padding: 5px;
+    }
+    body{
+       background-color: antiquewhite;
+    }
+    .xiang_img{
+  content: "";
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2; /* Set the opacity of the image */
+}
+.tile {
+  width: calc(600px / 3);
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: lightsalmon;
+  
+}
+
+.tile h2, a{
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.tryother{
+    padding: 3px;
+}
+.search {
+        padding-top: 15px;
+        position: relative;
+        width: 200px;
+    }
+    
+    .search input[type="text"] {
+        background-color: #fff;
+        border: none;
+        border-radius: 20px;
+        box-sizing: border-box;
+        color: #333;
+        font-size: 14px;
+        height: 30px;
+        padding: 5px 30px 5px 10px;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .search input[type="text"]:focus {
+        background-color: #f2f2f2;
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    
+    .search button[type="submit"] {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+    }
+    
+    .search button[type="submit"]:hover {
+        cursor: pointer;
+
+    }
+    
+    .search button[type="submit"] svg {
+        fill: #000000;
+        height: 20px;
+        width: 20px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="..//index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><div class="search">
+                <form action="../search.php" method="get">
+                <input type="text" placeholder="Recipe..." id="searchbox" name="q" onkeyup="search()">
+                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.707 20.293l-5.372-5.372a7.5 7.5 0 1 0-1.414 1.414l5.372 5.372a1 1 0 0 0 1.414-1.414zM4.5 9a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z"/></svg></button>
+            </form>
+            </div></li>
+        </ul>
+    </div>
+        <div class="img">
+            <img src="..//assets/pancake2.png" alt="pancake" class="pancake_img">
+        </div>
+        <div class="pan_text">
+            <h1 style="text-align: center;">Pancake</h1>
+            <h2 style="text-align: center;font-size: 30px;font-weight: 300;">
+                Elite Recipe for Morning Breakfast 
+            </h2>
+            <h2>Ingredients Required</h2>
+            <div class="ingred">
+                <h3 style="text-align: left;font-size: 20px;font-weight: 300;">
+                    <ul>
+                        <li>1 Cup Flour</li>
+                        <li>2 tablespoon sugar</li>
+                        <li>2 teaspoon baking powder</li>
+                        <li>1/2 teaspoon salt</li>
+                        <li>1 Cup Milk</li>
+                        <li>2 Tablespoon unsalted butter or vegetable oil</li>
+                        <li>1 Large Egg</li>
+                        <li>1 tablespoon vegetable oil</li>
+                    </ul>
+                </h3>
+            <h2>Lets Cook it</h2>
+            <blockquote>
+               <strong>Step 1: </strong> <br> Preheat oven to 200 degrees; have a baking sheet or heatproof platter ready to keep cooked pancakes warm in the oven. In a small bowl, whisk together flour, sugar, baking powder, and salt; set aside.
+            </blockquote>
+            <blockquote>
+                <strong>Step 2: </strong> <br>
+                In a medium bowl, whisk together milk, butter (or oil), and egg. Add dry ingredients to milk mixture; whisk until just moistened (do not overmix; a few small lumps are fine).
+            </blockquote>
+            <blockquote>
+                <strong>Step 3: </strong> <br>
+                Heat a large skillet (nonstick or cast-iron) or griddle over medium. Fold a sheet of paper towel in half, and moisten with oil; carefully rub skillet with oiled paper towel.
+            </blockquote>
+            <blockquote>
+                <strong>Step 4: </strong> <br>
+                For each pancake, spoon 2 to 3 tablespoons of batter onto skillet, using the back of the spoon to spread batter into a round (you should be able to fit 2 to 3 in a large skillet)
+            </blockquote>  
+            <blockquote>
+                <strong>Step 5: </strong> <br>
+                Cook until surface of pancakes have some bubbles and a few have burst, 1 to 2 minutes. Flip carefully with a thin spatula, and cook until browned on the underside, 1 to 2 minutes more. Transfer to a baking sheet or platter; cover loosely with aluminum foil, and keep warm in oven. Continue with more oil and remaining batter. (You'll have 12 to 15 pancakes.) Serve warm, with desired toppings.
+            </blockquote>
+            <h2 style="text-align: center;font-size: 30px;font-weight: 300;">
+                💫 And Here the pancake is now all yours ENJOY XD 💫 
+            </h2>
+        <h2>Make A perfect Combo with pancake </h2>
+        <div class="tryother">
+            <div class="tiles">
+                <div class="tile">
+                  <a href="..//rec/tea.html"><img src="..//assets/tea.png" width="200" height="150"></a>
+                  <h2><a href="..//rec/tea.html" style="text-decoration: none;">Tea</a></h2>
+                </div>
+                <div class="tile">
+                <a href="..//rec/coffee.html"><img src="..//assets/coffeesmal.png" width="200" height="160"></a>
+                  <h2><a href="..//rec/coffee.html">Coffee</a></h2>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <img src="..//assets/tray_large.png" alt="" class="xiang_img" height="400px">
+<footer class="footer">
+    2023 Recipedia &copy;
+</footer>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Xian's Vegetable biryani</title>
+<link href="../sticker_5.png" rel="icon" type="image/png"/>
+<style>
+    *{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .nav ul{
+        list-style: none;
+        padding: 0%;
+
+        margin: 0%;
+        background-color: burlywood;
+        overflow: hidden;
+        
+    }
+    .nav li{
+        float: left;
+    }
+    .nav li a{
+        text-decoration: none;
+        padding: 16px;
+        display: block;
+        
+    }
+    .nav li a:hover{
+        background-color: blanchedalmond;
+    }
+    .img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    footer{
+        background-color: goldenrod;
+        margin: 0%;
+        padding: 5px;
+    }
+    body{
+       background-color: antiquewhite;
+    }
+    .tiles {
+    padding: 20px;
+  width: 600px;
+  font-size: 0;
+  margin: 0 auto;
+
+}
+
+.tile {
+  width: calc(600px / 3);
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: lightsalmon;
+}
+.xiang_img{
+  content: "";
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2; /* Set the opacity of the image */
+}
+
+.tile h2, a{
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.search {
+        padding-top: 15px;
+        position: relative;
+        width: 200px;
+    }
+    
+    .search input[type="text"] {
+        background-color: #fff;
+        border: none;
+        border-radius: 20px;
+        box-sizing: border-box;
+        color: #333;
+        font-size: 14px;
+        height: 30px;
+        padding: 5px 30px 5px 10px;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .search input[type="text"]:focus {
+        background-color: #f2f2f2;
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    
+    .search button[type="submit"] {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+    }
+    
+    .search button[type="submit"]:hover {
+        cursor: pointer;
+
+    }
+    
+    .search button[type="submit"] svg {
+        fill: #000000;
+        height: 20px;
+        width: 20px;
+    }
+    </style>
+</head>
+<body>
+<div class="nav">
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../about.html">About</a></li>
+<li><div class="search">
+<form action="../search.php" method="get">
+<input id="searchbox" name="q" onkeyup="search()" placeholder="Recipe..." type="text"/>
+<button type="submit"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.707 20.293l-5.372-5.372a7.5 7.5 0 1 0-1.414 1.414l5.372 5.372a1 1 0 0 0 1.414-1.414zM4.5 9a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z"></path></svg></button>
+</form>
+</div></li>
+</ul>
+</div>
+<div class="img">
+<img alt="" src="../assets/veg_biryani.png" style="height: 230px;"/>
+</div>
+<div class="coffee_text">
+<h1 class="rec_name" style="text-align: center;">Vegetable biryani</h1>
+<h2 class="rec_quote" style="text-align: center;font-size: 30px;font-weight: 300;">Biryani is the king of all rice dishes.</h2>
+</div>
+<div class="ingrediants">
+<h2>Ingredients Required</h2>
+<h3 style="text-align: left;font-size: 20px;font-weight: 300;">
+<ul class="rec_ingred"><li>2 Cups basmati rice (rinsed and soaked for 30 Minutes)</li><li>2 tablespoon ghee or oil</li><li>1 large onion (sliced)</li><li>2 Green chilies (chopped)</li><li>2 cups mixed vegetables (carrots peas greenBeans cauliflower potatoes) chopped</li><li>1/2 teaspoon turmeric powder</li><li>1 teaspoon red chili powder</li><li>1 teaspoon coriander powder</li>
+<li>1 teaspoon cumin powder</li><li>1 teaspoon garam masala powder</li>
+<li>Salt to taste</li>
+<li>1 cup plain yogurt</li>
+<li>1/2 cup chopped fresh cilantro leaves
+</li>
+<li>1/4 cup chopped fresh mint leaves
+</li>
+<li>2 tablespoons fried onions (optional)
+</li>
+</ul>
+
+</h3>
+</div>
+<div class="letsmake">
+<h2>Lets Make it</h2>
+<blockquote><strong>Step 1: </strong><br>
+    <p>Heat the ghee or oil in a large pot or Dutch oven over medium heat. Add the sliced onion and sauté until golden brown, stirring occasionally.</p>
+    <strong>Step 2:</strong><br>
+    <p>Add the ginger-garlic paste and green chilies, and sauté for another minute.   </p>
+    <strong>Step 3:</strong><br>
+    <p>Add the mixed vegetables and sauté for 5-7 minutes until they are partially cooked.
+    </p>
+    <strong>Step 4:</strong><br>
+    <p>Add the turmeric powder, red chili powder, coriander powder, cumin powder, garam masala powder, and salt, and sauté for 2-3 minutes.    </p>
+    <strong>Step 5:</strong><br>
+    <p>Add the yogurt, cilantro leaves, and mint leaves, and mix well.    </p>
+    <strong>Step 6:</strong><br>
+    <p>Add the soaked rice and 3 1/2 cups of water. Bring to a boil, then reduce the heat to low, cover, and simmer for 15-20 minutes, or until the rice is fully cooked and the water has been absorbed.
+    </p>
+    <strong>Step 7:</strong>
+    <p>Remove from heat and let it sit for 5-10 minutes. Fluff the rice with a fork.
+    </p>
+    <strong>Step 8:</strong>
+    <p>Garnish with fried onions (if using) and serve hot with raita (yogurt sauce) and/or papadum (crispy Indian crackers).    </p>
+</blockquote>
+
+</div>
+<h2 class="rec_ending" style="text-align: center;font-size: 30px;font-weight: 300;">✨ And the mouth watering veg biryani is all yours ✨</h2>
+<div class="try_other">
+<h2>Try Other Recipes </h2>
+<div class="tiles">
+<div class="tile">
+<a href="../rec/pancake.html"><img height="150" src="../assets/pancake2.png" width="200"/></a>
+<h2><a href="..//rec/pancake.html" style="text-decoration: none;">Pancake</a></h2>
+</div>
+<div class="tile">
+<a href="../rec/paratha.html"><img height="155" src="../assets/alooparatha.png" width="200"/></a>
+<h2><a href="../rec/paratha.html">Aloo Paratha</a></h2>
+</div>
+</div>
+</div>
+
+<img alt="" class="xiang_img" height="400px" src="..//assets/tray_large.png"/>
+<footer class="footer">
+    2022 Recipedia ©
+</footer>
+</body>
+</html>

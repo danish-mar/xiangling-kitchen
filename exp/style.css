@@ -1,0 +1,40 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.search-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+h1 {
+	margin-bottom: 0.5em;
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+input[type="text"] {
+	padding: 0.5em;
+	border-radius: 5px 0 0 5px;
+	border: none;
+	width: 70%;
+}
+
+button[type="submit"] {
+	padding: 0.5em;
+	border-radius: 0 5px 5px 0;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+}

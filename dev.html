@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .developer-pane {
+  position: fixed;
+  top: 50%;
+  right: 550px;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 300px;
+  background-color: #f2f2f2;
+  border: 5px solid #ff8c00;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  transition: all 0.5s ease-in-out;
+}
+
+.developer-pane.active {
+  right: 0;
+}
+
+.developer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.developer-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.developer-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.developer-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.developer-photo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 140, 0, 0.5);
+  z-index: -1;
+  animation: rgb-light 2s infinite;
+}
+
+@keyframes rgb-light {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+  }
+  25% {
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 140, 0, 0.5);
+  }
+  75% {
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+  }
+}
+.developer-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.developer-title {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.developer-quote {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.developer-social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.developer-social-icons a {
+  margin: 0 10px;
+}
+
+.developer-social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devs</title>
+</head>
+<body>
+    <div class="developer-pane">
+        <div class="developer-info">
+          <div class="developer-profile">
+            <div class="developer-photo">
+              <img src="keqing.gif" alt="Keqing Profile Photo">
+            </div>
+            <div class="developer-name">Keqing</div>
+            <div class="developer-title">Full Stack Dev</div>
+          </div>
+          <div class="developer-quote">
+            "Programming is not about what you know, it's about what you can figure out." - Keqing
+          </div>
+          <div class="developer-social-icons">
+            <a href="#"><img src="discord-icon.png" alt="Discord"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          </div>
+
+        </div>
+      </div>
+      
+    <!-- i want to create a developer's pane which is colored grey background and bold orange outline and popping out from the right with rounded corners on the left not fully touching the another border inside that pane i want to add a dev name "Keqing" with her photo in a circular manner with gamer like asus rog rgb light animation with title "Full Stack Dev" with a developer quote and info and after small 3 logos of Discord Instagram Facebook must appear   -->
+</body>
+</html>

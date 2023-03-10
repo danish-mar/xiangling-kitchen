@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiangling's Kitchen</title>
+    <style>
+    body{
+        background-color: #f9d5bc;
+    }
+    *::-webkit-scrollbar{
+        display: none;
+    }
+    *{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    ul{
+        list-style: none;
+        padding: 0%;
+
+        margin: 0%;
+        background-color: burlywood;
+        overflow: hidden;
+        
+    }
+    li{
+        float: left;
+        
+        
+    }
+    li a{
+        text-decoration: none;
+        text-align: center;
+        padding: 16px;
+        display: block;
+        
+    }
+    li a:hover{
+        background-color: antiquewhite;
+    }
+    .pancake_img{
+        height: 400px;
+        width: 400px;
+    }
+    .pancake_text{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .google-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  padding: 8px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.google-search input[type="text"] {
+  flex: 1;
+  border: none;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline: none;
+  background-color: transparent;
+}
+
+.google-search input[type="text"]::placeholder {
+  color: #999;
+}
+
+.google-search button[type="submit"] {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.google-search svg {
+  width: 24px;
+  height: 24px;
+  fill: #555;
+  margin-right: 8px;
+}
+.auto-type{
+    color: grey;
+}
+.product-list{
+    padding-top: 20px 0;
+    overflow-y: scroll;
+}
+.product-list::-webkit-scrollbar{
+    display: none;
+}
+.product{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+.product img{
+    object-fit: cover;
+    border-radius: 5px;
+}
+.product .p-details{
+    padding-left: 15px;
+}
+.product .p-details h2{
+    font-size: 30px;
+    
+}
+.product .p-details h3{
+    font-size: 15px;
+    
+}
+.xiang_img{
+  content: "";
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2; /* Set the opacity of the image */
+}
+footer {
+  background-color: #eaeaea;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  font-size: 16px;
+  color: #444;
+  margin: 0;
+}
+
+</style>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<script>
+
+</script>
+<link rel="icon" type="image/png" href="./sticker_5.png">
+</head>
+<body>
+
+    <!-- <div class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div> -->
+        <div class="gouba_logo">
+            <img src="./gouba.png" alt="" style="height: 250px; width: 250px; display: block;margin: 0 auto;">
+        </div>
+        <div class="search">
+            <h1 style="text-align: center; text-shadow: 0 0px 6px lightpink;">Xiangling's Kitchen</h1>
+            <h2 style="text-align: center;">How To make <span class="auto-type"></span></h2>
+            <form action="search.php" method="get" class="google-search">
+                <input type="text" id="searchbox" name="q" placeholder="Search...🔍" onkeyup="search()">
+                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.7 22.3l-6.1-6.1c1.3-1.7 2.1-3.8 2.1-6.2 0-5-4-9-9-9s-9 4-9 9 4 9 9 9c2.4 0 4.5-.8 6.2-2.1l6.1 6.1c.2.2.5.2.7 0s.2-.5 0-.7zM3 11c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z"/></svg></button>
+            </form>              
+            <div id="suggestions">
+                <div class="suggestion-list">
+                    <div class="suggestion-items">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Try out our top Recipes: </h2>
+        <div class="product-list" id="product-list">
+            <div class="product">
+                <a href="..//rec/coffee.html" target="_blank"><img src="..//assets/coffeesmal.png" alt="" height="200px"></a>
+                <div class="p-details">
+                    <h2><a href="..//rec/coffee.html" target="_blank" style="text-decoration: none; color: black;">Coffee</a></h2>
+                    <h3>Hot Coffee that will be ready in no time</h3>
+                </div>
+            </div>
+            <div class="product">
+                <a href="..//rec/pancake.html" target="_blank"><img src="..//assets/pancakesmol.png" alt="" height="200px"></a>
+                <div class="p-details">
+                    <h2><a href="..//rec/pancake.html" target="_blank" style="text-decoration: none; color: black;">Pancake</a></h2>
+                    <h3>The science of pancakes: the perfect ratio of flour, eggs, and milk can make a stack of pancakes that is both fluffy and golden brown.</h3>
+                </div>
+                </div>
+                <div class="product">
+                    <a href="..//rec/tea.html" target="_blank"><img src="..//assets/tea.png" alt="" height="170px"></a>
+                    <div class="p-details">
+                        <h2><a href="..//rec/tea.html" target="_blank" style="text-decoration: none; color: black;">Tea</a></h2>
+                        <h3>Take a break, make a cup of tea, and let the soothing aroma and warmth calm your soul.</h3>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="..//rec/noodle.html" target="_blank"><img src="..//assets/noodles.png" alt="" height="170px"></a>
+                    <div class="p-details">
+                        <h2><a href="..//rec/noodle.html" target="_blank" style="text-decoration: none; color: black;">Veg Noodles</a></h2>
+                        <h3>Life is like a bowl of noodles - it's all about how you choose to stir things up..</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var type = new Typed(".auto-type",{
+            strings: ["Pancake", "Coffee", "Paratha", "Noodles"],
+            typeSpeed: 100,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+    <img src="..//assets/tray_large.png" alt="" class="xiang_img" height="400px">
+
+</body>
+<footer>
+    <div class="footer-content">
+    2023 Recipedia ©
+</div>
+</footer>
+</html>
