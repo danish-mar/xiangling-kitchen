@@ -118,6 +118,23 @@
     }
     
     </style>
+    <style>
+        ::-webkit-scrollbar {
+  width: 6px; /* width of the scrollbar */
+  background-color: #8a5300; /* background color of the scrollbar */
+}
+
+/* Apply styles to the thumb (the moving part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: #ff8800; /* color of the thumb */
+  border-radius: 5px; /* round the edges of the thumb */
+}
+
+/* Apply styles to the track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background-color: #8a5300; /* background color of the track */
+}
+    </style>
 </head>
 <body>
     <div class="nav">
@@ -132,6 +149,9 @@
             </div></li>     
             
         </ul>
+    </div>
+    <div class="rating_make">
+        <h3 style=" float: left; padding-right: 10px; padding-top: 5px;">Rating:</h3><h3 style="background-color: black; padding: 5px; border-radius: 11px; float: left;">⭐⭐⭐⭐</h3><h3 style="float: right; padding-top: 5px; padding-left: 6px;">Make Time : <i>15 Mins</i></h3>
     </div>
         <div class="img">
             <img src="..//assets/noodles.png" alt="pancake" class="pancake_img">

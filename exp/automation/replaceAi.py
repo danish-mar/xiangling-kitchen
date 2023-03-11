@@ -1,3 +1,4 @@
+#!/bin/python3
 import time
 from bs4 import BeautifulSoup
 
@@ -17,6 +18,32 @@ soup = BeautifulSoup(old_html, 'html.parser')
 print(f"Replacing webpage title with {new_recipe_name}")
 soup.title.string.replace_with(f"Xian's {new_recipe_name}")
 print("Done")
+
+#replace the make time
+temp_make_time = input("Make Time")
+print(f"Replacing the make time of template")
+recipe_make_time = soup.find('i',{'class': 'make_time'})
+recipe_make_time.string.replace_with(temp_make_time)
+
+#replace the rating
+rate_char = "⭐"
+print(f"Rating using {rate_char}")
+temp_rec_rate = soup.find('h3',{'class':'rec_rating'})
+new_rec_rate = int(input("Please Enter rating 1-5:"))
+if new_rec_rate == 1:
+    temp_rec_rate.string.replace_with("⭐")
+elif new_rec_rate == 2:
+    temp_rec_rate.string.replace_with("⭐⭐")
+elif new_rec_rate == 3:
+    temp_rec_rate.string.replace_with("⭐⭐⭐")
+elif new_rec_rate == 4:
+    temp_rec_rate.string.replace_with("⭐⭐⭐⭐")
+elif new_rec_rate == 5:
+    temp_rec_rate.string.replace_with("⭐⭐⭐⭐⭐")
+else:
+    temp_rec_rate.string.replace_with("")
+print("Done")
+
 
 # Replace the recipe name
 print(f"Adding {new_recipe_name} to {new_recipe_file_name}.html")
